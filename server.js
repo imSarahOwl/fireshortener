@@ -48,7 +48,7 @@ app.get('/:id', (req, res) => {
     
 })
 
-app.post('/', (req, res) => {
+app.post('/api', (req, res) => {
     var docRef = db.collection('urls').doc(generate(20));
     var lecode = generate(6)
     var leurl
